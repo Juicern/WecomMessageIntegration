@@ -29,7 +29,11 @@ namespace WecomMessageIntegration
         /// <returns>xml文件路径</returns>
         private string GetXmlPath()
         {
-            return Path.Combine(Environment.CurrentDirectory, "WecomSetting.xml");
+            var strXmlPath = Directory.GetCurrentDirectory();
+            strXmlPath = Directory.GetParent(strXmlPath).FullName;
+            strXmlPath = Directory.GetParent(strXmlPath).FullName;
+            strXmlPath = Directory.GetParent(strXmlPath).FullName;
+            return Path.Combine(strXmlPath, "WecomSetting.xml");
         }
         /// <summary>
         /// 从xml配置文件中初始化信息
