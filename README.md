@@ -1,9 +1,7 @@
 # WecomMessageIntegration
 
-调用企业微信的接口，指定用户发消息
+呼叫企業微信的介面，指定使用者發訊息
 
-使用前需要把项目里的`corpid`, `secret`, `agentid`换成自己对应的信息
+使用前需要把專案裡的`corpid`, `secret`, `agentid`換成自己對應的資訊
 
-以及替换`GetUserList`方法中的手机号
-
-
+以及替換`GetUserList`方法中的手機號
